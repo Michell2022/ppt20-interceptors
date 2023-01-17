@@ -10,10 +10,12 @@ export class HomeComponent implements OnInit{
 
   entrada:any = [];
 
+  mostrar = false;
+
   constructor(private llamarServicio:ApiUsuariosService){ }
 
   ngOnInit(): void {
-    // this.ejecutarEntrada();
+    this.getImprimirServicio();
   }
 
   getImprimirServicio(){
@@ -23,7 +25,7 @@ export class HomeComponent implements OnInit{
         // console.log(res);
       
         this.entrada = res;
-        console.log(this.entrada);
+        // console.log(this.entrada);
         
       },
       err =>{
@@ -31,10 +33,4 @@ export class HomeComponent implements OnInit{
       }
     );
   }
-
-  ejecutarEntrada(){
-    this.getImprimirServicio();
-  }
-
-
 }

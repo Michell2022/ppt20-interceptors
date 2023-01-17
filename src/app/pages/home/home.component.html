@@ -1,1 +1,8 @@
 <p>home works!</p>
+<h1>USUARIOS</h1>
+<button (click)="ejecutarEntrada()">Mostrar usuario</button>
+<div>
+    <ul *ngFor="let dato of entrada">
+        <li>{{dato.name}}</li>
+    </ul>
+</div>

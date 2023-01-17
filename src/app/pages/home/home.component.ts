@@ -8,6 +8,7 @@ import { ApiUsuariosService } from 'src/app/services/api-usuarios.service';
 })
 export class HomeComponent implements OnInit{
 
+  //CREO MI VARIABLE entrada QUE RECIBIRA LOS DATOS.
   entrada:any = [];
 
   mostrar = false;
@@ -15,9 +16,11 @@ export class HomeComponent implements OnInit{
   constructor(private llamarServicio:ApiUsuariosService){ }
 
   ngOnInit(): void {
+    // LLAMO A MI FUNCION PARA QUE SE EJECUTE AL INICIAR.
     this.getImprimirServicio();
   }
 
+  // CREO UNA FUNCION
   getImprimirServicio(){
 
     this.llamarServicio.getMostrarUsuarios().subscribe(

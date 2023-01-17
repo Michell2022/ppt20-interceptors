@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BreakingComponent } from './breaking/breaking.component';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    BreakingComponent
   ],
   imports: [
     CommonModule,

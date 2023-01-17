@@ -1,11 +1,13 @@
-<div class="w-3/4 mx-auto bg-white p-4 rounded shadow-[0_0_12px_0px_rgba(0,0,0,0.2)] ">
-    <h1 class="text-3xl font-bold text-center pt-2 pb-4">USUARIOS</h1>
-    <button class="bg-orange-400 text-white py-2 px-4 rounded ml-4 duration-300	 hover:bg-orange-600 my-5"
-    (click)="mostrar = !mostrar">Mostrar usuarios</button>
-    <hr>
-    <div *ngIf="mostrar" class="mt-5 ml-8">
-        <ul *ngFor="let dato of entrada">
-            <li class="py-1 list-disc">{{dato.name}}</li>
-        </ul>
+<div class="mt-12 pt-12">
+    <div class="w-3/4 mx-auto bg-white p-4 rounded shadow-[0_0_12px_0px_rgba(0,0,0,0.2)] ">
+        <h1 class="text-3xl font-bold text-center pt-2 pb-4">USUARIOS</h1>
+        <button class="bg-orange-400 text-white py-2 px-4 rounded ml-4 duration-300	 hover:bg-orange-600 my-5"
+            (click)="mostrar = !mostrar">Mostrar usuarios</button>
+        <hr>
+        <div *ngIf="mostrar" class="mt-5 ml-8">
+            <ul *ngFor="let dato of entrada">
+                <li class="py-1 list-disc">{{dato.name}}</li>
+            </ul>
+        </div>
     </div>
 </div>
